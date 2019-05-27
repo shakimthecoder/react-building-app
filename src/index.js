@@ -1,5 +1,5 @@
 import React from 'React';
-import React-DOM from 'react-dom';
+import ReactDOM from 'react-dom';
 import App from './components/App';
 
 class Homepage extends React.Component {
@@ -11,6 +11,6 @@ class Homepage extends React.Component {
     
 }
 
-ReactDOM.render(<App />, document.querySelector('#root'));
+ReactDOM.render(<App />,
+    document.querySelector('#root'));
 
-export default App;
