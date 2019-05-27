@@ -1,7 +1,8 @@
 import React from 'React';
-import 'react-dom' from 'react-dom';
+import React-DOM from 'react-dom';
+import App from './components/App';
 
-class App extends React.Component {
+class Homepage extends React.Component {
     render(){
         return(
         <div>Homepage update</div>
@@ -10,4 +11,6 @@ class App extends React.Component {
     
 }
 
-React.DOM
+ReactDOM.render(<App />, document.querySelector('#root'));
+
+export default App;
