@@ -15,7 +15,7 @@ onInputChange = (event) => {
     {
         return(
             <div className="ui field">
-                <form className="search-style">
+                <form onSubmit={this.onFormSubmit}className="search-style">
                     <div className="search-section">
                     <label>Search</label>
                         <input 
