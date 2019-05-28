@@ -4,6 +4,12 @@ class SearchBar extends React.Component {
 
     state = { term : '' };
 
+onInputChange = (event) => { 
+    this.setState({
+        term: event.target.value
+    });
+
+};
 
     render()
     {
@@ -12,9 +18,11 @@ class SearchBar extends React.Component {
                 <form className="search-style">
                     <div className="search-section">
                     <label>Search</label>
-                        <input type="text" value={this.state.term} />
-                            
-
+                        <input 
+                        type="text" 
+                        value={this.state.term} 
+                        onChange={this.onInputChange}
+                        />
                       </div>
                      </form>
                 </div>
