@@ -11,8 +11,9 @@ class SearchBar extends React.Component {
             <div className="ui field">
                 <form className="search-style">
                     <div className="search-section">
-                        <input form="search-bar" />
-                            <label>Search</label>
+                    <label>Search</label>
+                        <input type="text" value={this.state.term} />
+                            
 
                       </div>
                      </form>
