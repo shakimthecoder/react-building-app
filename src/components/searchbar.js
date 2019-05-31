@@ -9,14 +9,15 @@ onInputChange = event => {
         term: event.target.value
     });
 
+// eslint-disable-next-line no-undef
 onFormSubmit = event => {
     event.preventDefault();
 
+    this.props.onFormSubmit(this.state.term)
     };
 };
-    render()
-    {
-        return(
+    render(){
+        return (
             <div className="ui field">
                 <form onSubmit={this.onFormSubmit}className="search-style">
                     <div className="search-section">
