@@ -7,8 +7,7 @@ export default axios.create({
    baseURL: 'https://googleapis.com/youtube/v3',
    params: {
        part: 'snippet' ,
-       key:
-       q:
+       key: KEY,
        maxResults: 5
    }
 });
